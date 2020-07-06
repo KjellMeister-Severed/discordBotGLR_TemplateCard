@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+        /* RESET CSS  HIER NIET AAN AANPASSEN*/
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* END OF RESET CSS HIER NIETS AAN AANPASSEN*/
+
+
+        body{
+            font-family: 'Bangers', cursive;
+            color: white;
+            letter-spacing: 0.2em;
+            text-shadow: -1px 0 cadetblue, 0 1px cadetblue, 1px 0 cadetblue, 0 -1px cadetblue;
+        }
+
+        main{
+            width: 420px;
+            height: 200px;
+            border: blue solid 3px;
+            border-radius: 10px;
+            background-image: url("images/bg.jpg");
+            background-size: cover;
+        }
+
+        #container{
+            padding: 5px;
+        }
+
+        #header{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #header_profl_pic {
+            background-color: dodgerblue;
+            background-image: url("images/pfp.png");
+            width: 70px;
+            height: 70px;
+            background-size: cover;
+            border-radius: 50%;
+            border: blue 3px solid;
+        }
+
+        #player_name{
+            background: dodgerblue;
+            padding: 3px;
+            width: 250px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: 2px solid blue;
+            font-size: 1.5rem;
+        }
+
+        #level_id{
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            background-image: url("images/exp.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+        }
+
+        #clan_id{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        #clan_shield{
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .tite_img{
+            width: 30px;
+        }
+
+        article{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            width: 100px;
+            font-size: 0.9rem;
+        }
+
+        #player_info_collection{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+        }
+
+        .infoCover{
+            width: 400px;
+            margin: 10px auto auto;
+        }
+
+        .badge{
+            position: absolute;
+            top: 60px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="header">
+                <div id="header_profl_pic">
+                    <img src="images/lb_1.png" alt="" class="badge">
+                </div>
+
+                <div>
+                    <h1 id="player_name">ViciousVirus</h1>
+                    <figure id="clan_id">
+                        <img src="images/alliance.png" alt="clanShield" id="clan_shield">
+                        <figcaption id="clan_name">Still Tilted</figcaption>
+                    </figure>
+                </div>
+                <div id="level_id">
+                    <h2 id="level_display">430</h2>
+                </div>
+            </div>
+            <div class="infoCover">
+                <div id="player_info_collection">
+                    <article id="friends">
+                        <img src="images/friendstemp.png" alt="friendstemp" class="tite_img">
+                        <div>
+                            <h4 class="articleTitle">Friends</h4>
+                            <h4 class="articleDetails">264</h4>
+                        </div>
+                    </article>
+
+                    <article id="colonies">
+                        <img src="images/friendstemp.png" alt="friendstemp" class="tite_img">
+                        <div>
+                            <h4 class="articleTitle">Colonies</h4>
+                            <h4 class="articleDetails">264</h4>
+                        </div>
+                    </article>
+
+                    <article id="joined">
+                        <img src="images/friendstemp.png" alt="friendstemp" class="tite_img">
+                        <div>
+                            <h4 class="articleTitle">Joined</h4>
+                            <h4 class="articleDetails">264</h4>
+                        </div>
+                    </article>
+
+                    <article id="attacks">
+                        <img src="images/friendstemp.png" alt="friendstemp" class="tite_img">
+                        <div>
+                            <h4 class="articleTitle">attacks</h4>
+                            <h4 class="articleDetails">264</h4>
+                        </div>
+                    </article>
+
+                    <article id="galaxy">
+                        <img src="images/friendstemp.png" alt="friendstemp" class="tite_img">
+                        <div>
+                            <h4 class="articleTitle">galaxy</h4>
+                            <h4 class="articleDetails">264</h4>
+                        </div>
+                    </article>
+
+                    <article id="lastActive">
+                        <img src="images/friendstemp.png" alt="friendstemp" class="tite_img">
+                        <div>
+                            <h4 class="articleTitle">Last Activity</h4>
+                            <h4 class="articleDetails">264</h4>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
